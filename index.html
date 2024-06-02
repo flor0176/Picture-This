@@ -16,16 +16,33 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
     <picture>
+  
+      <!-- Values for viewports 960px and above - square images -->
+      <source srcset="images/museum-square-800_x_800.jpg 1x,
+                      images/museum-square-1600_x_1600.jpg 2x,
+                      images/museum-square-2400_x_2400.jpg 3x" 
+              media="(min-width: 1600px)">
+
+      <source srcset="images/museum-square-640_x_640.jpg 1x,
+                      images/museum-square-1280_x_1280.jpg 2x,
+                      images/museum-square-1920_x_1920.jpg 3x" 
+              media="(min-width: 1280px)">
+
+      <source srcset="images/museum-square-480_x_480.jpg 1x,
+                      images/museum-square-960_x_960.jpg 2x,
+                      images/museum-square-1440_x_1440.jpg 3x" 
+              media="(min-width: 960px)">
+
       <!-- Values for viewports 960px and below - landscape images -->
       <source srcset="images/museum-landscape-960_x_540.jpg 1x,
                       images/museum-landscape-1920_x_1080.jpg 2x,
                       images/museum-landscape-2880_x_1621.jpg 3x"
-              media="(min-width: 960px)">
-      
+              media="(min-width: 959px)">
+          
       <source srcset="images/museum-landscape-720_x_405.jpg 1x,
                       images/museum-landscape-1440_x_810.jpg 2x,
-                      images/museum-landscape-2160_x_1215.jpg 3x"
-              media="(min-width: 720px)"> 
+                      images/museum-landscape-2160_x_1215.jpg 3x" 
+              media="(min-width: 720px)">
       
       <source srcset="images/museum-landscape-480_x_270.jpg 1x,
                       images/museum-landscape-960_x_540.jpg 2x,
@@ -37,12 +54,12 @@
                       images/museum-landscape-960_x_540.jpg 3x"
               media="(min-width: 320px)"> 
       
-      <!-- <source srcset="images/museum-landscape-320_x_180.jpg"
-              media="(max-width: 319px)">  -->
-      <!--Default image if no source is supported -->
+      <source srcset="images/museum-landscape-320_x_180.jpg"
+              media="(max-width: 319px)">
+
+      <!--Default image if no supported -->
       <img src="images/museum.jpg" alt="placeholder">
     </picture>
-
   </header>
 </body>
 
